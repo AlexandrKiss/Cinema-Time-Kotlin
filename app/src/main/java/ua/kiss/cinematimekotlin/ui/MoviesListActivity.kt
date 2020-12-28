@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,8 +25,7 @@ class MoviesListActivity : AppCompatActivity() {
         setTheme(R.style.CustomBar)
         super.onCreate(savedInstanceState)
         binding = MoviesListActivityBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
         setupUI()
         setupViewModel()
         setupObserver()
@@ -69,8 +67,8 @@ class MoviesListActivity : AppCompatActivity() {
         })
     }
 
-    private fun renderList(users: List<Movie>) {
-        adapter.addData(users)
+    private fun renderList(movies: List<Movie>) {
+        adapter.addData(movies)
         adapter.notifyDataSetChanged()
     }
 

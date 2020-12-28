@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="item"
-            type="ua.kiss.cinematimekotlin.model.MovieListItem" />
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -52,7 +46,6 @@
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:text="@{item.name}"
                     tools:text="Диво-Жінка 1984" />
 
                 <TextView
@@ -62,7 +55,6 @@
                     android:alpha="0.7"
                     android:textColor="@color/colorWhite"
                     android:textSize="15sp"
-                    android:text="@{item.genre}"
                     tools:text="фентезі, бойовик, пригоди" />
 
             </LinearLayout>
