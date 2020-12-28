@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="@color/colorRedTheme"/>
+        </shape>
+    </item>
+    <item
+        android:width="161dp"
+        android:start="12dp"
+        android:gravity="center_vertical"
+        android:drawable="@drawable/logo_cinema_time"/>
+</layer-list>
